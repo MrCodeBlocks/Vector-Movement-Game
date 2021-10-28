@@ -29,6 +29,9 @@ public class KeyHandler extends KeyAdapter {
                 if(key == KeyEvent.VK_ESCAPE) {
                     System.exit(1);
                 }
+                if(key == KeyEvent.VK_S) {
+                    temp.down = true;
+                }
             }
         }
     }
@@ -46,6 +49,9 @@ public class KeyHandler extends KeyAdapter {
                 }
                 if(key == KeyEvent.VK_A) {
                     temp.rl = false;
+                }
+                if(key == KeyEvent.VK_S) {
+                    temp.down = false;
                 }
             }
         }
