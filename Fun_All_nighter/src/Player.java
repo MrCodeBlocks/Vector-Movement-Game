@@ -51,6 +51,9 @@ public class Player extends GameObject{
 		if(up) {
 			Move(1);
 		}
+		if(down) {
+			Move(-1);
+		}
 
 		PlayerDirection.x = (float)Math.cos(angle * (Math.PI/180));
 		PlayerDirection.y = (float)Math.sin(angle * (Math.PI/180));
